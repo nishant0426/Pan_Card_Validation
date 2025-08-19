@@ -14,13 +14,13 @@ The goal is to clean, validate, and categorize PAN numbers into **Valid** and **
 
 ---
 
-## 🗂 Data Source  
+##  Data Source  
 - **Input:** PAN numbers stored in a staging table (`stg_pan_numbers_dataset`).  
 - **Output:** Cleaned & validated dataset (`pan_numbers_dataset_cleaned` and `vw_valid_invalid_pans`).  
 
 ---
 
-## ⚙ Project Workflow  
+##  Project Workflow  
 1. **Data Cleaning**  
    - Handle missing and null values.  
    - Remove duplicates.  
