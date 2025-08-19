@@ -27,7 +27,7 @@ The goal is to clean, validate, and categorize PAN numbers into **Valid** and **
    - Trim extra spaces.  
    - Standardize case (convert to uppercase).  
 
-2. **SQL Techniques Used  
+2. **SQL Techniques Used** 
 - **CTEs (Common Table Expressions):** For stepwise data cleaning and validation.  
 - **Views:** Created `vw_valid_invalid_pans` to categorize PAN numbers.  
 - **Joins:** Used in the final step to compare cleaned PANs with validated PANs. 
