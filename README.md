@@ -27,9 +27,10 @@ The goal is to clean, validate, and categorize PAN numbers into **Valid** and **
    - Trim extra spaces.  
    - Standardize case (convert to uppercase).  
 
-2. **Validation Functions**  
-   - `fn_check_adjacent_repetition`: Detects adjacent repeating characters.  
-   - `fn_check_sequence`: Detects sequential characters (ABCDE, 1234, etc.).  
+2. **SQL Techniques Used  
+- **CTEs (Common Table Expressions):** For stepwise data cleaning and validation.  
+- **Views:** Created `vw_valid_invalid_pans` to categorize PAN numbers.  
+- **Joins:** Used in the final step to compare cleaned PANs with validated PANs. 
 
 3. **Validation Rules**  
    - PAN format must follow: `^[A-Z]{5}[0-9]{4}[A-Z]$`.  
