@@ -30,7 +30,8 @@ The goal is to clean, validate, and categorize PAN numbers into **Valid** and **
 2. **SQL Techniques Used** 
 - **CTEs (Common Table Expressions):** For stepwise data cleaning and validation.  
 - **Views:** Created `vw_valid_invalid_pans` to categorize PAN numbers.  
-- **Joins:** Used in the final step to compare cleaned PANs with validated PANs. 
+- **Joins:** Used in the final step to compare cleaned PANs with validated PANs.
+- - **Regex (Regular Expressions):** Applied to enforce PAN format and validation rules.  
 
 3. **Validation Rules**  
    - PAN format must follow: `^[A-Z]{5}[0-9]{4}[A-Z]$`.  
